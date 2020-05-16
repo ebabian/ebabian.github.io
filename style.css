@@ -5,14 +5,51 @@ body {
   margin-top: 17%;
   /* margin-bottom:%; */
 }
-.container > .gloveImg{
-width: 28%;
-border-radius: 50%;
-margin-left: 1%;
-padding: 1%;
-transition-duration: 5s;
-/* transform: translate(0); */
+.imageRow {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
-/* .gloveImg:hover {
-  display: none;
-} */
+.column {
+  width: 33%;
+  margin-bottom: 30px;
+}
+ .column > img{
+  width: 80%;
+  border-radius: 50%;
+  margin-left: 8%;
+  padding: 1%;
+  padding-left: 1%;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+ }
+.text-section {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 35%; */
+}
+.column > img:hover {
+opacity: 0.2;
+}
+.column > img:hover .text-section{
+opacity: 1;
+}
+#newsList {
+  width: 30%;
+  font-family: sans-serif;
+  font-weight: 100;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+li {
+  padding: 5px;
+}
+li:hover {
+  color: red;
+  padding: 7px;
+}
