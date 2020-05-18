@@ -20,7 +20,7 @@
   border-radius: 50%;
   margin: 15%;
   margin-top: 20%;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
   /* display: none; */
   position: relative;
   cursor: pointer;
@@ -63,10 +63,14 @@
   position: absolute;
   z-index: 1;
   text-align: center;
-  left: 35%;
+  left: 33%;
+  top: 35%;
 }
 #title {
   color: rgba(0,0,0,0.9);
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 .carousel-item:hover .gloveImg{
   opacity: 0.2;
@@ -80,11 +84,6 @@
 .carousel-item:hover .titleDiv{
   opacity: 1;
 }
-/* #title {
-position: absolute;
-z-index: 1;
-text-align: center;
-} */
 #newsList, #healthList, #artList {
    font-family: sans-serif;
    font-weight: 300;
@@ -95,8 +94,6 @@ text-align: center;
    line-height: 1.5em;
    width: 90%;
    cursor: pointer;
-   /* margin-left: 10%; */
-
 }
 li {
    padding: 5px 0 5px 5px;
@@ -104,6 +101,7 @@ li {
 li:hover {
    color: red;
    padding: 7px;
+   border: 1px solid black;
 }
 .modal-button {
   	padding: 2%;

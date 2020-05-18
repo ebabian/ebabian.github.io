@@ -79,10 +79,11 @@ $(() => {
         }
             //set modal display to none
             const closeModal = () => {
-            $modal.css('display', 'none')
-            //set ul list display to none
-            $ul.css('display', 'none')
-            $('#modal-text').empty();
+              window.location.reload($('.container'));
+            // $modal.css('display', 'none')
+            // //set ul list display to none
+            // $ul.css('display', 'none')
+            // $('#modal-text').empty();
 
         }
           // const redirectLink = () => {
@@ -166,10 +167,11 @@ $(() => {
           }
             //set modal display to none
             const closeModal = () => {
-            $modal.css('display', 'none')
-            //set ul list display to none
-            $ul2.css('display', 'none')
-            $('#modal-text').empty();
+              window.location.reload($('.container'));
+            // $modal.css('display', 'none')
+            // //set ul list display to none
+            // $ul2.css('display', 'none')
+            // $('#modal-text').empty();
         }
             //each article have an event listener with the abstract
             // $('#article1').on('click', data.results[0].abstract)
@@ -245,10 +247,12 @@ $(() => {
         }
             //set modal display to none
             const closeModal = () => {
-            $modal.css('display', 'none')
-            //set ul list display to none
-            $ul2.css('display', 'none')
-            $('#modal-text').empty();
+              window.location.reload($('.container'));
+            // $modal.css('display', 'none')
+            //
+            // //set ul list display to none
+            // $ul2.css('display', 'none')
+            // $('#modal-text').empty();
         }
             //each article have an event listener with the abstract
             // $('#article1').on('click', data.results[0].abstract)
