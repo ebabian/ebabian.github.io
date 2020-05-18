@@ -1,4 +1,27 @@
 $(() => {
+  let currentImg = 0;
+  const numOfImgs = $('.imageRow').children().length - 1;
+  $('.next').on('click', () => {
+    $('.imageRow').children().eq(currentImg).css('display', 'none');
+    if (currentImg < numOfImgs) {
+      currentImg++;
+    } else {
+      currentImg = 0;
+    }
+    $('.imageRow').children().eq(currentImg).css('display', 'block')
+  })
+  $('.previous').on('click', () => {
+    $('.imageRow').children().eq(currentImg).css('display', 'none')
+    if(currentImg > 0) {
+      currentImg--;
+    } else {
+      currentImg = numOfImgs;
+    }
+    $('.imageRow').children().eq(currentImg).css('display', 'block')
+  })
+
+})
+$(() => {
 
   $('.gloveImg').on('click', event => {
     // event.preventDefault();
@@ -63,13 +86,12 @@ $(() => {
             $('#article3').click(function () {
               showAbstract(data.results[2].abstract)
           })
-        }
+      }
     }).catch(err => {
       console.log(err);
     })
   })
 })
-
 //MIDDLE IMAGE
 $(() => {
 
