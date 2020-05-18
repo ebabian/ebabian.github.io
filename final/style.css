@@ -114,10 +114,11 @@ li:hover {
   	cursor: pointer;
     float: right;
     /* margin-right: 100px; */
-    margin-top: 3px;
     font-size: 1em;
     margin-left: 1%;
     cursor: pointer;
+    /* position: absolute; */
+
   }
 .modal-button:hover {
   background-color: #777777;
@@ -135,11 +136,12 @@ li:hover {
   }
   #modal-text {
   	background-color: rgba(256, 256, 256, 0.9);
-    padding: 5em;
+    padding: 4em;
     /* text-align: center; */
     /* padding-left: 150px; */
     text-transform: uppercase;
     font-family: 'Arial';
+    /* position: relative; */
   }
   #modal-text > p {
       font-size: 1em;
