@@ -55,26 +55,40 @@ $(() => {
 
           //modal for article abstract
           const $modal = $('#modal');
-          const $articleBtn = $('#article');
+          const $closeBtn = $('#closeArticle');
+          const $articleBtn = $('#goToArticle');
 
           const showAbstract = (abstract) => {
 
             $modal.css('display', 'block');
 
-            const $p = $('<p>').html(abstract)
+            const $p = $('<p>').html(abstract).attr('id', 'abstractText')
             $('#modal-text').append($p);
 
-            $articleBtn.on('click', closeModal)
+            $closeBtn.on('click', closeModal)
 
-            // $('#modal-text').modal('show')
-          }
+            $articleBtn.on('click', function () {
+              if ($('#abstractText').text() == data.results[0].abstract) {
+                window.location.assign("https://www.nytimes.com/2020/05/18/us/coronavirus-updates.html")
+              } else if ($('#abstractText').text() == data.results[1].abstract) {
+                window.location.assign("https://www.nytimes.com/2020/05/18/health/coronavirus-vaccine-moderna.html")
+              } else if ($('#abstractText').text() == data.results[2].abstract) {
+                window.location.assign("https://www.nytimes.com/interactive/2020/05/18/us/coronavirus-underlying-conditions.html")
+            }
+          })
+        }
             //set modal display to none
             const closeModal = () => {
             $modal.css('display', 'none')
             //set ul list display to none
             $ul.css('display', 'none')
             $('#modal-text').empty();
+
         }
+          // const redirectLink = () => {
+          //
+          // }
+
             //each article have an event listener with the abstract
             // $('#article1').on('click', data.results[0].abstract)
             $('#article1').click(function () {
@@ -127,17 +141,28 @@ $(() => {
 
           //modal for article abstract
           const $modal = $('#modal');
-          const $articleBtn = $('#article');
+          const $closeBtn = $('#closeArticle');
+          const $articleBtn = $('#goToArticle');
 
           const showAbstract = (abstract) => {
+
             $modal.css('display', 'block');
 
-            const $p = $('<p>').html(abstract)
+            const $p = $('<p>').html(abstract).attr('id', 'abstractText')
             $('#modal-text').append($p);
 
-            $articleBtn.on('click', closeModal)
+            $closeBtn.on('click', closeModal)
 
-            // $('#modal-text').modal('show')
+            $articleBtn.on('click', function () {
+              if ($('#abstractText').text() == data.results[0].abstract) {
+                window.location.assign("https://www.nytimes.com/2020/05/18/health/coronavirus-contact-tracing-jobs.html")
+              } else if ($('#abstractText').text() == data.results[1].abstract) {
+                window.location.assign("https://www.nytimes.com/2020/05/18/world/asia/wuhan-coronavirus-lockdown.html")
+              } else if ($('#abstractText').text() == data.results[2].abstract) {
+                window.location.assign("https://www.nytimes.com/2020/05/18/books/coronavirus-books-publishing.html")
+              }
+
+            })
           }
             //set modal display to none
             const closeModal = () => {
@@ -196,21 +221,28 @@ $(() => {
 
           //modal for article abstract
           const $modal = $('#modal');
-          const $articleBtn = $('#article');
+          const $closeBtn = $('#closeArticle');
+          const $articleBtn = $('#goToArticle');
 
           const showAbstract = (abstract) => {
 
-
-
             $modal.css('display', 'block');
 
-            const $p = $('<p>').html(abstract)
+            const $p = $('<p>').html(abstract).attr('id', 'abstractText')
             $('#modal-text').append($p);
 
-            $articleBtn.on('click', closeModal)
+            $closeBtn.on('click', closeModal)
 
-            // $('#modal-text').modal('show')
-          }
+            $articleBtn.on('click', function () {
+              if ($('#abstractText').text() == data.results[0].abstract) {
+                window.location.assign("https://www.nytimes.com/interactive/2020/05/18/arts/music/eminem-marshall-mathers-lp.html")
+              } else if ($('#abstractText').text() == data.results[1].abstract) {
+                window.location.assign("https://www.nytimes.com/2020/05/18/arts/television/fred-willard-best-performances.html")
+              } else if ($('#abstractText').text() == data.results[2].abstract) {
+                window.location.assign("https://www.nytimes.com/2020/05/17/arts/design/guggenheim-countryside-tomatoes.html")
+            }
+          })
+        }
             //set modal display to none
             const closeModal = () => {
             $modal.css('display', 'none')
