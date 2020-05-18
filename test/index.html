@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RONA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
+
+    <script src="app.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="modal">
+      <div id="modal-text">
+        <button class="modal-button" id="article">Read Article</button>
+      </div>
+     </div>
+    <div class="container">
+    <div class="carousel-container">
+      <div class="carousel-btn previous">
+      <img src="imgs/left.png"/>
+      </div>
+      <div class="imageRow">
+        <div class="carousel-item" id="gloveDiv" style="display: block">
+          <img class="gloveImg" src="imgs/glove.jpeg">
+          <h2 id="title">NYT TOP ARTICLES</h2>
+        </div>
+        <div class="carousel-item" id="maskDiv" style="display: none">
+          <img class="maskImg" src="imgs/mask_two.jpg" alt="mask">
+          <h2 id="title">NYT HEALTH ARTICLES</h2>
+        </div>
+        <div class="carousel-item" id="artDiv" style="display: none">
+          <img class="selfImg" src="imgs/me.JPG">
+          <h2 id="title">NYT ART ARTICLES</h2>
+        </div>
+      </div>
+      <div class="carousel-btn next">
+        <img src="imgs/right.png"/>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

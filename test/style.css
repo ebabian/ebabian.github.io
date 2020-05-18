@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel-container {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+.imageRow {
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.imageRow img {
+  width: 70%;
+  border-radius: 50%;
+  margin: 15%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  display: none;
+  position: relative;
+  cursor: pointer;
+}
+.imageRow img:first-of-type {
+  display: block;
+}
+.carousel-btn {
+  align-self: center;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  opacity: 0.3;
+}
+.carousel-btn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.carousel-btn img {
+  width: 60%;
+}
+#title {
+text-align: center;
+}
+#newsList, #healthList, #artList {
+   font-family: sans-serif;
+   font-weight: 300;
+   list-style: none;
+   text-transform: uppercase;
+   font-size: 1em;
+   color: black;
+   line-height: 1.5em;
+   width: 90%;
+   cursor: pointer;
+   /* margin-left: 10%; */
+
+}
+li {
+   padding: 5px 0 5px 5px;
+}
+li:hover {
+   color: red;
+   padding: 7px;
+}
+.modal-button {
+  	padding: 2%;
+  	background-color: #92b2ba;
+  	border: none;
+  	outline: none;
+  	border-radius: 3px;
+  	color: white;
+  	font-family: 'Arial';
+  	cursor: pointer;
+    float: right;
+    /* margin-right: 100px; */
+    margin-top: 3px;
+    font-size: 1em;
+    margin-left: 7%;
+    cursor: pointer;
+  }
+.modal-button:hover {
+  background-color: #777777;
+  }
+  #modal {
+  	background-color: rgba(0,0,0,0.1);
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	height: 100%;
+  	width: 100%;
+  	z-index: 1;
+  	overflow: auto;
+  	display: none;
+  }
+  #modal-text {
+  	background-color: rgba(256, 256, 256, .5);
+    padding: 13em;
+    /* text-align: center; */
+    /* padding-left: 150px; */
+    text-transform: uppercase;
+    font-family: 'Arial';
+  }
+  #modal-text > p {
+      font-size: 1em;
+      width: 70%;
+      /* margin-left: 10%; */
+  }
