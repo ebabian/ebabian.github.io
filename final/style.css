@@ -104,7 +104,7 @@ li:hover {
    border: 1px solid black;
 }
 .modal-button {
-  	padding: 2%;
+  	padding: 1%;
   	background-color: #92b2ba;
   	border: none;
   	outline: none;
@@ -114,16 +114,23 @@ li:hover {
   	cursor: pointer;
     float: right;
     /* margin-right: 100px; */
-    font-size: 1em;
-    margin-left: 1%;
+    font-size: .8em;
+    margin-left: 2%;
     cursor: pointer;
     /* position: absolute; */
-
   }
 .modal-button:hover {
   background-color: #777777;
-  }
-  #modal {
+}
+#closeArticle {
+  position: absolute;
+  top: 30%;
+  left: 90%;
+  padding-right: 5%;
+  padding-left: 
+  margin-right: 1%;
+}
+#modal {
   	background-color: rgba(0,0,0,0.3);
   	position: fixed;
   	top: 0;
@@ -133,18 +140,19 @@ li:hover {
   	z-index: 1;
   	overflow: auto;
   	display: none;
-  }
-  #modal-text {
-  	background-color: rgba(256, 256, 256, 0.9);
-    padding: 4em;
+}
+#modal-text {
+	background-color: rgba(256, 256, 256, 0.9);
+  padding: 4em;
     /* text-align: center; */
     /* padding-left: 150px; */
-    text-transform: uppercase;
-    font-family: 'Arial';
-    /* position: relative; */
-  }
-  #modal-text > p {
-      font-size: 1em;
-      width: 70%;
-      /* margin-left: 10%; */
-  }
+  /* text-transform: uppercase; */
+  font-family: 'Arial';
+  position: relative;
+}
+#modal-text > p {
+  font-size: 1em;
+  width: 70%;
+  margin-left: 15%;
+  line-height: 1.5em;
+}

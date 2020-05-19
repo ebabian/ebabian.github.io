@@ -85,9 +85,6 @@ $(() => {
               $('#modal-text').empty();
             $modal.css('display', 'none')
 
-            // //set ul list display to none
-            // $ul2.css('display', 'none')
-
         }
             $('#article1').click(function () {
               showAbstract(data.results[0].abstract)
@@ -175,7 +172,6 @@ $(() => {
             // $ul2.css('display', 'none')
         }
             //each article have an event listener with the abstract
-            // $('#article1').on('click', data.results[0].abstract)
             $('#article4').click(function () {
               showAbstract(data.results[0].abstract)
             })
@@ -252,9 +248,6 @@ $(() => {
               // window.location.reload($('.container'));
               $('#modal-text').empty();
             $modal.css('display', 'none')
-
-            //set ul list display to none
-            // $ul2.css('display', 'none')
 
         }
             //each article have an event listener with the abstract
