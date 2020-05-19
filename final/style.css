@@ -165,25 +165,27 @@ li:hover {
 }
 /* functional on desktop, tablet, and mobile */
 /* mobile device */
-@media (max-width: 576px) {
+@media
+    (max-width: 375px)
+and (max-width: 667px) {
   #title {
-    font-size: 14px;
+    font-size: 20px;
   }
   .titleDiv {
     left: 20%;
     top: 35%;
   }
   li {
-    font-size: 10px;
+    font-size: 22px;
     line-height: 1em;
   }
   ul {
     margin-left: -20px;
   }
   .imageRow img {
-    width: 120%;
+    width: 140%;
     margin: 0;
-    margin-left: -18px;
+    margin-left: -22px;
   }
   #modal-text {
     font-size: 11px;
