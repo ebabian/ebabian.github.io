@@ -165,49 +165,44 @@ li:hover {
 }
 /* functional on desktop, tablet, and mobile */
 /* mobile device */
-@media
-    (max-width: 375px)
-and (max-width: 667px) {
-  #title {
-    font-size: 20px;
+@media (min-width: 414px){
+   #title {
+    font-size: .7em;
   }
-  .titleDiv {
+ /* .titleDiv {
     left: 20%;
     top: 35%;
-  }
+  } */
   li {
-    font-size: 22px;
+    font-size: .7em;
     line-height: 1em;
   }
   ul {
     margin-left: -20px;
   }
-  .imageRow img {
-    width: 180%;
-    margin: 0;
-    margin-left: -22px;
+  .imageRow {
+    width: 200%;
+    padding: 0;
   }
   #modal-text {
-    font-size: 20px;
+    font-size: .7em;
   }
   #closeArticle {
     left: 86%;
-    top: 10%;
+    top: 30%;
   }
   #goToArticle {
     left: 70%;
-    top: 10%;
+    top: 30%;
   }
   .modal-button {
-    font-size: 11px;
+    font-size: .7em;
   }
   .carousel-btn {
-    width: 35%;
-    margin-top: 30%;
+    width: 30%;
+    margin: 0;
   }
-  .imageRow{
-    margin-top: 30%;
-  }
+
 
 }
 
