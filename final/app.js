@@ -1,7 +1,8 @@
 $(() => {
   let currentImg = 0;
   const numOfImgs = $('.imageRow').children().length - 1;
-  $('.right').on('click', () => {
+  //function for right button
+  const rightClick = () => {
     $('.imageRow').children().eq(currentImg).css('display', 'none');
     if (currentImg < numOfImgs) {
       currentImg++;
@@ -9,8 +10,10 @@ $(() => {
       currentImg = 0;
     }
     $('.imageRow').children().eq(currentImg).css('display', 'block')
-  })
-  $('.left').on('click', () => {
+  }
+  $('.right').on('click', rightClick)
+  //function for left button
+  const leftClick = () => {
     $('.imageRow').children().eq(currentImg).css('display', 'none')
     if(currentImg > 0) {
       currentImg--;
@@ -18,7 +21,8 @@ $(() => {
       currentImg = numOfImgs;
     }
     $('.imageRow').children().eq(currentImg).css('display', 'block')
-  })
+  }
+  $('.left').on('click', leftClick)
 })
 $(() => {
 
