@@ -35,7 +35,7 @@ $(() => {
     let link = `https://api.nytimes.com/svc/topstories/v2/home.json`;
 
     link += '?' + $.param({
-
+      'api-key': "4eAfRFLc13vKAKo5Ah14UXZrjsmitkCF"
     });
 
     $.ajax({
@@ -118,7 +118,7 @@ $(() => {
     let link = `https://api.nytimes.com/svc/topstories/v2/health.json`;
 
     link += '?' + $.param({
-
+      'api-key': "4eAfRFLc13vKAKo5Ah14UXZrjsmitkCF"
     });
 
     $.ajax({
@@ -200,7 +200,7 @@ $(() => {
     let link = `https://api.nytimes.com/svc/topstories/v2/arts.json`;
 
     link += '?' + $.param({
-      
+      'api-key': "4eAfRFLc13vKAKo5Ah14UXZrjsmitkCF"
     });
 
     $.ajax({
