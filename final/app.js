@@ -35,7 +35,7 @@ $(() => {
     let link = `https://api.nytimes.com/svc/topstories/v2/home.json`;
 
     link += '?' + $.param({
-      'api-key': "4eAfRFLc13vKAKo5Ah14UXZrjsmitkCF"
+
     });
 
     $.ajax({
@@ -74,9 +74,9 @@ $(() => {
 
             $articleBtn.on('click', function () {
               if ($('#abstractText').text() == data.results[0].abstract) {
-                window.open("https://www.nytimes.com/2020/05/18/us/coronavirus-updates.html", "_blank")
+                  window.open("https://www.nytimes.com/2020/05/18/us/coronavirus-updates.html", "_blank")
               } else if ($('#abstractText').text() == data.results[1].abstract) {
-                window.open("https://www.nytimes.com/2020/05/18/health/coronavirus-vaccine-moderna.html", "_blank")
+                  window.open("https://www.nytimes.com/2020/05/18/health/coronavirus-vaccine-moderna.html", "_blank")
               } else if ($('#abstractText').text() == data.results[2].abstract) {
                 window.open("https://www.nytimes.com/interactive/2020/05/18/us/coronavirus-underlying-conditions.html", "_blank")
             }
@@ -118,7 +118,7 @@ $(() => {
     let link = `https://api.nytimes.com/svc/topstories/v2/health.json`;
 
     link += '?' + $.param({
-      'api-key': "4eAfRFLc13vKAKo5Ah14UXZrjsmitkCF"
+
     });
 
     $.ajax({
@@ -200,7 +200,7 @@ $(() => {
     let link = `https://api.nytimes.com/svc/topstories/v2/arts.json`;
 
     link += '?' + $.param({
-      'api-key': "4eAfRFLc13vKAKo5Ah14UXZrjsmitkCF"
+      
     });
 
     $.ajax({
