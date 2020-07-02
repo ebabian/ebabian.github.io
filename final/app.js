@@ -26,9 +26,9 @@ $(() => {
 })
 $(() => {
 
-  $('.gloveImg').on('click', event => {
+  $('.glove-title').on('click', event => {
 
-    $('.gloveImg').off();
+    $('.glove-title').off();
     // event.preventDefault();
     const titleNum = 4;
 
@@ -107,10 +107,10 @@ $(() => {
 //MIDDLE IMAGE
 $(() => {
 
-  $('.maskImg').on('click', event => {
+  $('.mask-title').on('click', event => {
     $('#article1').empty();
     console.log($('#article1').text());
-    $('.maskImg').off();
+    $('.mask-title').off();
     // event.preventDefault();
 
     const titleNum = 4;
@@ -192,8 +192,8 @@ $(() => {
 })
 //LAST IMAGE
  $(() => {
-  $('.selfImg').on('click', event => {
-    $('.selfImg').off();
+  $('.art-title').on('click', event => {
+    $('.art-title').off();
     // event.preventDefault();
     const titleNum = 4;
 

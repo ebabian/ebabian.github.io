@@ -65,7 +65,7 @@
   z-index: 1;
   text-align: center;
   /* try margin instead of top and left*/
-  left: 33%;
+  left: 30%;
   top: 35%;
 }
 #title {
@@ -171,6 +171,9 @@ li:hover {
   letter-spacing: 8px;
   margin-left: 6px;
   margin-bottom: 7px;
+}
+h2:hover {
+  cursor: pointer;
 }
 /* responsive design for desktop */
 @media (min-width: 800px) {
