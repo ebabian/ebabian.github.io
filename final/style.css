@@ -24,7 +24,7 @@
   /* display: none; */
   position: relative;
   cursor: pointer;
-  margin-left: 10%;
+  margin-left: 12.5%;
 }
 .imageRow img:first-of-type {
   display: block;
@@ -184,14 +184,17 @@ h2:hover {
     width: 70%;
   }
   .imageRow img {
-    width: 80%;
+    width: 68%;
+    margin-left: 15%;
   }
   .carousel-btn img {
     width: 70%;
   }
   .titleDiv {
     margin-top: 8%;
+    left: 35%;
   }
+
   #title {
     font-size: 22px;
   }
@@ -206,13 +209,13 @@ h2:hover {
     }
   #closeArticle {
     margin-top: -5%;
-    margin-left: 85%;
+    margin-left: 86%;
     padding-right: 7px;
     margin-right: 1px;
   }
   #goToArticle {
     margin-top: -5%;
-    margin-left: 76%;
+    margin-left: 75%;
   }
   #modal {
     	background-color: rgba(0,0,0,0.3);
@@ -224,14 +227,16 @@ h2:hover {
     	display: none;
   }
   #modal-text {
-  	background-color: rgba(256, 256, 256, 0.9);
+  	background-color: rgba(256, 256, 256, .95);
     padding: 150px;
+    padding-left: 250px;
+    padding-right: 250px;
   }
   #modal-text > p {
     font-size: 16px;
     width: 85%;
     margin-left: 40px;
-    line-height: 22px;
+    line-height: 28px;
   }
   .page-header{
     font-family: sans-serif;
@@ -244,5 +249,8 @@ h2:hover {
     letter-spacing: 12px;
     margin-left: 6px;
     margin-bottom: 10px;
+  }
+  button {
+    width: 120px;
   }
 }
